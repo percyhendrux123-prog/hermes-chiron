@@ -1,0 +1,18 @@
+name: chiron
+version: 0.2.0
+manifest_version: 2
+api_version: 1
+description: An advisor who is also a friend. Reads your level per topic from your own words and adjusts how the agent talks; always asks before risky steps.
+author: Deploy Axiom
+license: MIT
+tags: [advisor, onboarding, accessibility, beginners, guidance]
+requires_hermes: ">=0.22.5"
+platforms: [macos, linux]
+provides_hooks:
+  - pre_llm_call
+config_schema:
+  always_on:
+    type: bool
+    default: false
+    label: Always on
+    description: "false = off in each session until you type /chiron on. true = on in every session."

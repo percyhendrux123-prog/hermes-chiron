@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+evals/box_*/
+evals/q_*.txt
+evals/*.json
+evals/*.log
