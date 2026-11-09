@@ -7,6 +7,11 @@ An advisor who is also a friend. Chiron reads how much you know about the topic 
 - Floor at every level: before anything risky (spend, send, publish, delete, credentials) the agent says what will happen and waits for a yes.
 - The system prompt never changes, so prompt caching keeps working.
 
+## Watch
+A 50-second walkthrough: [youtu.be/3DTyepZPk98](https://youtu.be/3DTyepZPk98)
+
+<a href="https://youtu.be/3DTyepZPk98"><img src="docs/chiron-woodcut.jpg" alt="Chiron, woodcut still from the walkthrough" width="360"></a>
+
 ## Use
 `/chiron on` in a session (off by default), `/chiron status`, `/chiron level <topic> <level>`, `/chiron reset`, `/chiron off`. Set `always_on: true` to run it in every session.
 
