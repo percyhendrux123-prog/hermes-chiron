@@ -1,5 +1,7 @@
 # hermes-chiron
 
+> **Part of the seat**, a collection of Hermes plugins that work together: watch, decide, act, prove, hand off. This one covers **watch**: it watches how you talk and tells the agent how to talk to you. [See the whole collection](https://github.com/percyhendrux123-prog#the-seat-a-collection-of-hermes-plugins).
+
 An advisor who is also a friend. Chiron reads how much you know about the topic in front of you (setup, AI, code, business, general) from your own words, with no model call and no outside data, and adds one short note per turn telling the agent how to talk to you: beginner, medium, pro or maximum.
 
 - Everyone starts at beginner. A first message on a topic with two or more clear signals is read at that level directly; after that a level moves at most one step per turn and needs two signals to go up, and one sign of confusion takes it down one step. A new topic starts one step below your highest level elsewhere.
