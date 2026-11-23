@@ -1,0 +1,16 @@
+{
+  "name": "deploy-axiom-chiron",
+  "owner": {
+    "name": "Deploy Axiom"
+  },
+  "metadata": {
+    "description": "Chiron for Claude Code, from Deploy Axiom."
+  },
+  "plugins": [
+    {
+      "name": "axiom-chiron",
+      "source": "./claude-plugin/chiron",
+      "description": "Reads your level on each topic from your own words, with no model call, and tells Claude how to talk to you."
+    }
+  ]
+}

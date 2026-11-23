@@ -25,6 +25,15 @@ Live multi-turn runs on a real model, with and without Chiron, are in [EVALS.md]
 
 Version 0.2.0. Tests: `cd tests && uv run --no-project --with pytest python -m pytest -q test_core.py --rootdir=.`
 
+## Also for Claude Code
+
+The same idea ships as a Claude Code plugin in [`claude-plugin/chiron`](claude-plugin/chiron). One `UserPromptSubmit` hook reads your level per topic from your own words with no model call, adds a short note per turn, and answers `/chiron` commands itself so they cost no model turn. It stores levels only, never prompt text, and fails open. The note is reworded for Claude Code, a few behaviours differ, and the plugin README lists the gaps. It is separate from the Hermes plugin and needs neither Hermes nor this folder's code.
+
+```
+claude plugin marketplace add percyhendrux123-prog/hermes-chiron
+claude plugin install axiom-chiron@deploy-axiom-chiron
+```
+
 ## Works with
 
 Chiron is one part of an operator layer for Hermes Agent, built by Deploy Axiom. Each plugin installs on its own and none requires another. Together they cover a working agent from first reply to finished task:

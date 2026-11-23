@@ -1,0 +1,29 @@
+{
+  "name": "axiom-chiron",
+  "displayName": "Chiron",
+  "version": "0.1.0",
+  "description": "Reads how much you know about a topic from your own words, with no model call, and adds one short note per turn telling Claude how to talk to you. Always asks before risky steps.",
+  "author": {
+    "name": "Deploy Axiom"
+  },
+  "homepage": "https://github.com/percyhendrux123-prog/hermes-chiron",
+  "repository": "https://github.com/percyhendrux123-prog/hermes-chiron",
+  "license": "MIT",
+  "keywords": [
+    "advisor",
+    "onboarding",
+    "beginners",
+    "accessibility",
+    "hooks",
+    "guidance"
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "userConfig": {
+    "always_on": {
+      "type": "boolean",
+      "title": "Always on",
+      "description": "false: Chiron is off in each session until you type /chiron on. true: it is on in every session.",
+      "default": false
+    }
+  }
+}
